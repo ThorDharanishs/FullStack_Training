@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading{
+            color: blue;
+            text-align: center;
+
+        }
+        .inline{
+            display: inline;
+
+        }
+
+        .parent1 {
+            position: relative;
+            z-index: 10;   /* stacking context */
+        }
+
+        .child1 {
+            position: absolute;
+            z-index: 99999;  /* huge but useless */
+        }
+
+        .parent2 {
+            position: relative;
+            z-index: 5;     /* lower context */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1 class="heading">Welcome to Derrry</h1>
+    <ul>
+        <li>apple</li>
+        <li>mango</li>
+    </ul>
+    <label>Numbers</label>
+    <ol type="number">
+        <li>one</li>
+        <li>two</li>
+    </ol>
+    <table border="1">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Thor</td>
+            <td>s</td>
+            <td>19</td>
+        </tr>
+    </table>
+    <p class="inline">normal para</p>
+    <p class="inline">2nd para</p>
+
+
+    <div class="parent1">
+        <div class="child1">Hello</div>
+        Parent
+    </div>
+
+    <div class="parent2">
+        <div class="child2">Hello</div>
+        Parent
+    </div>
+
+`
+</body>
+</html>
